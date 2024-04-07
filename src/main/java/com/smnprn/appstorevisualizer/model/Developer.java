@@ -3,9 +3,13 @@ package com.smnprn.appstorevisualizer.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Getter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name="developers")
 public class Developer {
@@ -14,13 +18,4 @@ public class Developer {
     private String developer_name;
     private String developer_url;
     private String developer_website;
-
-    public Developer() {}
-
-    public Developer(long id, String developer_name, String developer_url, String developer_website) {
-        this.id=id;
-        this.developer_name=developer_name;
-        this.developer_url=developer_url;
-        this.developer_website=developer_website;
-    }
 }
