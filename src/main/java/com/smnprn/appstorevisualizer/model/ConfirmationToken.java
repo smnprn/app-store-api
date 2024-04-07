@@ -1,6 +1,5 @@
-package com.smnprn.appstorevisualizer.utils;
+package com.smnprn.appstorevisualizer.model;
 
-import com.smnprn.appstorevisualizer.model.user.AppUser;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

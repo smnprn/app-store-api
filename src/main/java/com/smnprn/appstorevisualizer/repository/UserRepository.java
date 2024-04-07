@@ -1,7 +1,6 @@
 package com.smnprn.appstorevisualizer.repository;
 
-import com.smnprn.appstorevisualizer.model.App;
-import com.smnprn.appstorevisualizer.model.user.AppUser;
+import com.smnprn.appstorevisualizer.model.AppUser;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;

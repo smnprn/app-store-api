@@ -15,5 +15,4 @@ public record App(
         long developerId,
         double user_rating,
         int reviews
-) {
-}
+) {}

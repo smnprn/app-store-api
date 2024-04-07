@@ -1,4 +1,4 @@
-package com.smnprn.appstorevisualizer.model.user;
+package com.smnprn.appstorevisualizer.model;
 
 import jakarta.persistence.*;
 

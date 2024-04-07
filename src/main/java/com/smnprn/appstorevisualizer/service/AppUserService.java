@@ -1,8 +1,8 @@
 package com.smnprn.appstorevisualizer.service;
 
-import com.smnprn.appstorevisualizer.model.user.AppUser;
+import com.smnprn.appstorevisualizer.model.AppUser;
 import com.smnprn.appstorevisualizer.repository.UserRepository;
-import com.smnprn.appstorevisualizer.utils.ConfirmationToken;
+import com.smnprn.appstorevisualizer.model.ConfirmationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -53,7 +53,7 @@ public class AppUserService implements UserDetailsService {
 
         confirmationTokenService.saveConfirmationToken(confirmationToken);
 
-        return String.format("Sign up successful, your confirmation token is: %s", token);
+        return token;
     }
 
     public int enableAppUser(String email) {

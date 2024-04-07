@@ -1,11 +1,10 @@
 package com.smnprn.appstorevisualizer.service;
 
 import com.smnprn.appstorevisualizer.repository.ConfirmationTokenRepository;
-import com.smnprn.appstorevisualizer.utils.ConfirmationToken;
+import com.smnprn.appstorevisualizer.model.ConfirmationToken;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Service
