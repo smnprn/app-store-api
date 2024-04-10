@@ -1,21 +1,34 @@
 package com.smnprn.appstorevisualizer.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
 @Table(name="developers")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class Developer {
     @Id
-    private long id ;
-    private String developer_name;
-    private String developer_url;
-    private String developer_website;
+    @Column(name = "id")
+    @SequenceGenerator(
+            name = "user_sequence",
+            sequenceName = "user_sequence",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "user_sequence"
+    )
+    private Long id;
+    @Column(name = "developer_name")
+    private String name;
+    @Column(name = "developer_url")
+    private String url;
+    @Column(name = "developer_website")
+    private String website;
 }
