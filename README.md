@@ -6,9 +6,9 @@
     </a>
     <h2 align="center"><b>App Store API</b></h2>
     <p align="center">
-        <a href="https://github.com/smnprn/yugioh-duel-bot-telegram/issues">Report a bug</a>
+        <a href="https://github.com/smnprn/app-store-api/issues">Report a bug</a>
         -
-        <a href="https://github.com/smnprn/yugioh-duel-bot-telegram/issues">Request feature</a>
+        <a href="https://github.com/smnprn/app-store-api/issues">Request feature</a>
     </p>
 </div>
 
