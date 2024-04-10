@@ -7,10 +7,10 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 
 @EnableConfigurationProperties(RsaKeyProperties.class)
 @SpringBootApplication
-public class AppStoreVisualizerApplication {
+public class AppStoreApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AppStoreVisualizerApplication.class, args);
+		SpringApplication.run(AppStoreApiApplication.class, args);
 	}
 
 }

@@ -5,8 +5,9 @@ import com.smnprn.appstorevisualizer.service.RegistrationService;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.annotation.*;
+
+import java.io.IOException;
 
 @RestController
 @RequestMapping("api/v0.1/registration")
@@ -17,7 +18,6 @@ public class RegistrationController {
 
     @PostMapping
     public String register(@RequestBody RegistrationRequest request) {
-        // If request is invalid throws a HttpMessageNotReadableException and returns 401 Unauth to user
         return registrationService.register(request);
     }
 

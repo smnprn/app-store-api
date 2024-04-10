@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.smnprn</groupId>
-	<artifactId>app-store-visualizer</artifactId>
+	<artifactId>app-store-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>app-store-visualizer</name>
 	<description>App Store Visualizer</description>

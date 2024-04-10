@@ -1,5 +1,6 @@
 package com.smnprn.appstorevisualizer.service;
 
+import com.smnprn.appstorevisualizer.exception.EmailAlreadyTakenException;
 import com.smnprn.appstorevisualizer.model.AppUser;
 import com.smnprn.appstorevisualizer.repository.UserRepository;
 import com.smnprn.appstorevisualizer.model.ConfirmationToken;
@@ -35,7 +36,7 @@ public class AppUserService implements UserDetailsService {
         boolean userExists = userRepository.findByEmail(appUser.getEmail()).isPresent();
 
         if(userExists) {
-            throw new IllegalStateException("Email already taken");
+            throw new EmailAlreadyTakenException("Email is already taken");
         }
 
         String encodedPassword = bCryptPasswordEncoder.encode(appUser.getPassword());

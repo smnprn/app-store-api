@@ -1,5 +1,6 @@
 package com.smnprn.appstorevisualizer.service;
 
+import com.smnprn.appstorevisualizer.exception.TokenNotFoundException;
 import com.smnprn.appstorevisualizer.repository.ConfirmationTokenRepository;
 import com.smnprn.appstorevisualizer.model.ConfirmationToken;
 import lombok.AllArgsConstructor;
@@ -18,7 +19,7 @@ public class ConfirmationTokenService {
 
     public ConfirmationToken getToken(String token) {
         return confirmationTokenRepository.findByToken(token).orElseThrow(
-                () -> new IllegalStateException("Token not found")
+                () -> new TokenNotFoundException("Token not found, please check your confirmation token")
         );
     }
 

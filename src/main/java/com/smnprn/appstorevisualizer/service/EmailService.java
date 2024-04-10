@@ -1,5 +1,6 @@
 package com.smnprn.appstorevisualizer.service;
 
+import com.smnprn.appstorevisualizer.exception.ConfirmationEmailException;
 import com.smnprn.appstorevisualizer.utils.EmailSender;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
@@ -29,8 +30,8 @@ public class EmailService implements EmailSender {
             helper.setFrom("smnprn@gmail.com");
             mailSender.send(message);
         } catch (MessagingException e) {
-            LOG.error("Fail to send email", e);
-            throw  new IllegalStateException("Failed to send email");
+            LOG.error("Failed to send email to user: {}", to, e);
+            throw new ConfirmationEmailException();
         }
     }
 }
