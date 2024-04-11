@@ -16,7 +16,6 @@
 
 <!-- About -->
 ## About the project
-<br/>
 This project provides a REST API for retrieving information about apps in the Apple App Store.  
 Currently, the database holds data for over 2 million apps for which you can access detailed information including
 name, price, ratings and more.
