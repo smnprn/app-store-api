@@ -36,7 +36,7 @@ public class AppController {
             @RequestParam(value = "rating", required = false) Double user_rating,
             @RequestParam(value = "reviews", required = false) Integer reviews
     ) {
-        List<App> apps = appService.getApps(
+        App app = new App(
                 id,
                 app_id,
                 name,
@@ -52,6 +52,8 @@ public class AppController {
                 user_rating,
                 reviews
         );
+
+        List<App> apps = appService.getApps(app);
 
         if(!apps.isEmpty()) {
             return ResponseEntity.ok(apps);

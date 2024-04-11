@@ -17,9 +17,6 @@
 <!-- About -->
 ## About the project
 <br/>
-<div align="center">
-
-</div>
 This project provides a REST API for retrieving information about apps in the Apple App Store.  
 Currently, the database holds data for over 2 million apps for which you can access detailed information including
 name, price, ratings and more.
@@ -40,7 +37,7 @@ Copyright rights belong to the legitimate owners.
 <!-- Getting Started -->
 ## Get app information
 
-The app information endpoint is available at: `/api/v0.1/apps` and the developer information endpoint is at `/api/v0.1/developers`, both accept GET requests. </br>
+The app information endpoint is available at `/api/v0.1/apps` and the developer information endpoint is at `/api/v0.1/developers`, both accept GET requests. </br>
 You can pass multiple parameters to these endpoints to filter the information returned: </br> </br>
 `App endpoint` </br>
 * **id** - Unique id for every app database entry
@@ -93,11 +90,11 @@ You must include the bearer token in every request to the `.../apps` and `.../de
 
 <!-- Usage -->
 ## Example Usage
-* Get all the paid social network apps:
+Get all the paid social network apps:
 
 
     http GET .../api/v0.1/apps?free=0&genre=Social%20Networking 'Authorization: Bearer your_bearer_token'
-* Get all the info about the developer whose name is 'Google LLC':
+Get all the info about the developer whose name is 'Google LLC':
 
 
     http GET .../api/v0.1/developers?name=Google%20LLC 'Authorization: Bearer your_bearer_token'
