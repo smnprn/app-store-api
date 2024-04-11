@@ -10,8 +10,10 @@ import java.util.regex.Pattern;
 public class EmailValidator implements Predicate<String> {
     @Override
     public boolean test(String email) {
-        // This regex pattern is provided by the RFC standards (RFC5322)
-        // More info on: https://www.rfc-editor.org/info/rfc5322
+        /*
+         * This regex pattern is provided by the RFC standards (RFC5322)
+         * More info on: https://www.rfc-editor.org/info/rfc5322
+         */
         Pattern pattern = Pattern.compile("^[a-zA-Z0-9_!#$%&’*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$");
         Matcher matcher = pattern.matcher(email);
         return matcher.matches();
