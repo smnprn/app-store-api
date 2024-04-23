@@ -17,7 +17,7 @@
 <!-- About -->
 ## About the project
 This project provides a REST API for retrieving information about apps in the Apple App Store.  
-Currently, the database holds data for over 2 million apps for which you can access detailed information including
+Currently, the database holds data for over 1 million apps for which you can access detailed information including
 name, price, ratings and more.
 
 <b>Important note:</b>
@@ -26,9 +26,9 @@ Copyright rights belong to the legitimate owners.
 
 
 ### Built with
-* ![Java][java-logo]
-* ![Spring][spring-boot-logo]
-* ![MySQL][mysql-logo]
+![Java][java-logo] <br>
+![Spring][spring-boot-logo] <br>
+![MySQL][mysql-logo]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
